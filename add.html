@@ -14,9 +14,6 @@
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- Font Academicons CSS -->
-    <link rel="stylesheet" href="vendor/academicons/css/academicons.min.css">
-    
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     
@@ -36,18 +33,22 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <!-- Google Analytics -->
-    <!--
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-105687475-1', 'auto');
-      ga('send', 'pageview');
-    </script>
-    -->
-    
+    <style>
+
+      .carousel-indicators li {
+        background-color: #999 !important;
+        background-color: rgba(70,70,70,.25) !important;
+      }
+
+      .carousel-indicators .active {
+        background-color: #444 !important;
+      }
+      .carousel-indicators {
+        bottom: -50px;
+      }
+    </style>
+
+
   </head>
 
   <body data-spy="scroll" data-offset="0" style="padding-top: 0px;">
@@ -56,237 +57,258 @@
     <section id="top" class="anchor">
       <div class="jumbotron jumbotron-fluid" id="banner">
         <div class="container">
-            <h2><span class="bannertxt" style="line-height: 1.0em;">Generative Models and Uncertainty Quantification</span></h2>
-            <p style="font-weight: bold; line-height: 1.0em;"><span class="bannertxt">Copenhagen, October 9 and 10, 2019<br>http://GenerateUncertainty.github.io</span></p>
+          <h1 style="font-size: 36px"><span class="bannertxt">Generative Models and Uncertainty Quantification</span></h1>
+          <p style="font-weight: bold;"><span class="bannertxt">Copenhagen, October 9 and 10, 2019<br>http://GenerateUncertainty.github.io</span></p>
         </div>
       </div>
     </section>
 
     <!-- CAROUSEL -->
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-  </ol>
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+      </ol>
 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6">
-            <h2>Confirmed Speakers and Participants</h2>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-sm-4 person">
-            <img src="img/welling.png" alt="Max Welling" class="portrait"> 
-            <p>
-              <a href="https://staff.fnwi.uva.nl/m.welling/" class="person">Max Welling</a><br>
-              Professor  in Machine Learning at the University of Amsterdam and a VP Technologies at Qualcomm. 
-            </p> 
-          </div> <!-- col-sm-4 -->
-          
-          <div class="col-sm-4 person">
-            <img src="img/aki.png" alt="Aki Vehtari" class="portrait"> 
-            <p>
-              <a href="https://users.aalto.fi/~ave/" class="person">Aki Vehtari</a><br>
-              	Associate professor in computational probabilistic modeling at Aalto University;
-               Visiting professor at Technical University of Denmark (DTU).
-            </p> 
-          </div> <!-- col-sm-4 -->
-        </div> <!-- row -->
-        
-        <div class="row">
-          <div class="col-sm-4 person">
-            <img src="img/rtqichen.png" alt="Ricky (Tian Qi) Chen" class="portrait"> 
-            <p>
-              <a href="http://www.cs.toronto.edu/~rtqichen/" class="person">Ricky (Tian Qi) Chen</a><br>
-    	      PhD student at the University of Toronto.
-            </p> 
-          </div> <!-- col-sm-4 -->
-          
-          <div class="col-sm-4 person">
-            <img src="img/mark_wilk.png" alt="Mark van der Wilk" class="portrait"> 
-            <p>
-              <a href="https://markvdw.github.io/" class="person">Mark van der Wilk</a><br>
-    	      Machine Learning Researcher PROWLER.io.
-            </p> 
-          </div> <!-- col-sm-4 -->
-        </div> <!-- row -->
-      </div> <!-- container -->
-    </div> <!-- item -->
-    
-    <div class="item">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6">
-            <h2>Confirmed Speakers and Participants</h2>
-          </div>
-        </div>        
-        <div class="row">
-          <div class="col-sm-4 person">
-            <img src="img/miguel.png" alt="José Miguel Hernández Lobato" class="portrait"> 
-            <p>
-              <a href="https://jmhl.org/" class="person">José Miguel Hernández Lobato</a><br>
-	          University Lecturer in Machine Learning, University of Cambridge.
-            </p> 
-          </div> <!-- col-sm-4 -->
-          
-          <div class="col-sm-4 person">
-            <img src="img/rianne.png" alt="Rianne van den Berg" class="portrait"> 
-            <p>
-              <a href="https://riannevdberg.github.io" class="person">Rianne van den Berg</a><br>
-	          Research Scientist at Google AI, Amsterdam.
-            </p> 
-    	  </div> <!-- col-sm-4 -->
-        </div> <!-- row -->
-
-        <div class="row">
-          <div class="col-sm-4 person">
-            <img src="img/sebastian.png" alt="Sebastian Nowozin" class="portrait"> 
-            <p>
-              <a href="http://www.nowozin.net/sebastian/" class="person">Sebastian Nowozin</a><br>
-		      Machine learning researcher in the Brain team at Google AI, Berlin.
-            </p> 
-          </div> <!-- col-sm-4 -->
-          
-          <div class="col-sm-4 person">
-            <img src="img/daniel.png" alt="Daniel Hernández-Lobato" class="portrait"> 
-            <p>
-              <a href="https://dhnzl.org" class="person">Daniel Hernández-Lobato</a><br>
-		      Lecturer of Computer Science at Universidad Autónoma de Madrid.
-            </p> 
-	  </div> <!-- col-sm-4 -->
-        </div> <!-- row -->
-      </div> <!-- container -->
-    </div> <!-- item -->
-    
-    <div class="item">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6">
-            <h2>Confirmed Speakers and Participants</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-4 person">
-            <img src="img/andriy.png" alt="Andriy Mnih" class="portrait"> 
-            <p>
-              <a href="http://www.cs.toronto.edu/~amnih/" class="person">Andriy Mnih</a><br>
-              Research scientist at DeepMind.
-            </p> 
-          </div> <!-- col-sm-4 -->
-          
-          <div class="col-sm-4 person">
-            <img src="img/tom.png" alt="Tom Rainforth" class="portrait"> 
-            <p>
-              <a href="http://www.robots.ox.ac.uk/~twgr/" class="person">Tom Rainforth</a><br>
-		      Researcher in statistical machine learning at the University of Oxford.
-            </p> 
-    	  </div> <!-- col-sm-4 -->
-        </div> <!-- row -->
-
-        <div class="row">
-          <div class="col-sm-4 person">
-            <img src="img/casper.png" alt="Casper Kaae Sønderby" class="portrait"> 
-            <p>
-              <a href="https://casperkaae.github.io" class="person">Casper Kaae Sønderby</a><br>
-               Research Scientist in Google Brains Amsterdam Lab.
-            </p> 
-          </div> <!-- col-sm-4 -->
-
-          <div class="col-sm-4 person">
-            <img src="img/ole.png" alt="Ole Winther" class="portrait"> 
-            <p>
-              <a href="http://cogsys.imm.dtu.dk/staff/winther/" class="person">Ole Winther</a><br>
-               Professor at the Technical University of Denmark and University of Copenhagen
-            </p> 
-          </div> <!-- col-sm-4 -->
-        </div> <!-- row -->
-      </div> <!-- container -->
-    </div> <!-- item -->
-
-    <div class="item">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6">
-            <h2>Confirmed Speakers and Participants</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-4 person">
-            <img src="img/hauberg.png" alt="S&oslash;ren Hauberg" class="portrait"> 
-            <p>
-              <a href="http://www2.compute.dtu.dk/~sohau/" class="person">S&oslash;ren Hauberg</a><br>
-              Associate professor, Technical University of Denmark
-            </p> 
-          </div> <!-- col-sm-4 -->
-          
-          <div class="col-sm-4 person">
-            <img src="img/boomsma.png" alt="Wouter Boomsma" class="portrait"> 
-            <p>
-              <a href="http://www.diku.dk/Ansatte/?pure=da/persons/275482" class="person">Wouter Boomsma</a><br>
-		      Associate professor, University of Copenhagen.
-            </p> 
-    	  </div> <!-- col-sm-4 -->
-        </div> <!-- row -->
-
-        <div class="row">
-          <div class="col-sm-4 person">
-            <img src="img/pierre.png" alt="Pierre-Alexandre Mattei" class="portrait"> 
-            <p>
-              <a href="https://pamattei.github.io/" class="person">Pierre-Alexandre Mattei</a><br>
-               INRIA Sophia-Antipolis.
-            </p> 
-          </div> <!-- col-sm-4 -->
-
-          <div class="col-sm-4 person">
-            <img src="img/jes.png" alt="Jes Frellsen" class="portrait"> 
-            <p>
-              <a href="https://frellsen.org/" class="person">Jes Frellsen</a><br>
-               Associate professor, Technical University of Denmark.
-            </p> 
-          </div> <!-- col-sm-4 -->
-        </div> <!-- row -->
-      </div> <!-- container -->
-    </div> <!-- item -->
-
-    <div class="item">
-      <div class="container">
-        <div class="row">
-          <div ">
-            <div class="container">
-              <img src="img/mermaid4.png" style="width:60%; padding-top: 50px;">
-              <div style="position: absolute; top: 10%; left: 100px;">
-                <h2><span class="bannertxt" style="line-height: 1.0em;">Venue</span></h2>
-                <p style="font-weight: bold; line-height: 1.0em;"><span class="bannertxt">Pier 47, Copenhagen</span></p>
-                <p style="font-weight: bold; line-height: 1.0em;"><span class="bannertxt">Limited seating (request attendence at http://GenerateUncertainty.github.io)</span></p>
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6">
+                <h2>Confirmed Speakers and Participants</h2>
               </div>
             </div>
-          </div>
-        </div> <!-- row -->
-      </div> <!-- container -->
-    </div> <!-- item -->
-  </div>
 
-  <!-- Controls -->
-  <!--
-  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-  -->
-  </div>
+            <div class="row">
+              <div class="col-sm-4 person">
+                <img src="img/welling.png" alt="Max Welling" class="portrait">
+                <p>
+                  <a href="https://staff.fnwi.uva.nl/m.welling/" class="person">Max Welling</a><br>
+                  Professor  in Machine Learning at the University of Amsterdam and a VP Technologies at Qualcomm.
+                </p>
+              </div> <!-- col-sm-4 -->
 
+              <div class="col-sm-4 person">
+                <img src="img/aki.png" alt="Aki Vehtari" class="portrait">
+                <p>
+                  <a href="https://users.aalto.fi/~ave/" class="person">Aki Vehtari</a><br>
+                    Associate professor in computational probabilistic modeling at Aalto University;
+                   Visiting professor at Technical University of Denmark (DTU).
+                </p>
+              </div> <!-- col-sm-4 -->
+            </div> <!-- row -->
+
+            <div class="row">
+              <div class="col-sm-4 person">
+                <img src="img/rtqichen.png" alt="Ricky (Tian Qi) Chen" class="portrait">
+                <p>
+                  <a href="http://www.cs.toronto.edu/~rtqichen/" class="person">Ricky (Tian Qi) Chen</a><br>
+                  PhD student at the University of Toronto.
+                </p>
+              </div> <!-- col-sm-4 -->
+
+              <div class="col-sm-4 person">
+                <img src="img/mark_wilk.png" alt="Mark van der Wilk" class="portrait">
+                <p>
+                  <a href="https://markvdw.github.io/" class="person">Mark van der Wilk</a><br>
+                  Machine Learning Researcher PROWLER.io.
+                </p>
+              </div> <!-- col-sm-4 -->
+            </div> <!-- row -->
+          </div> <!-- container -->
+        </div> <!-- item -->
+
+        <div class="item">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6">
+                <h2>Confirmed Speakers and Participants</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4 person">
+                <img src="img/miguel.png" alt="José Miguel Hernández Lobato" class="portrait">
+                <p>
+                  <a href="https://jmhl.org/" class="person">José Miguel Hernández Lobato</a><br>
+                  University Lecturer in Machine Learning, University of Cambridge.
+                </p>
+              </div> <!-- col-sm-4 -->
+
+              <div class="col-sm-4 person">
+                <img src="img/rianne.png" alt="Rianne van den Berg" class="portrait">
+                <p>
+                  <a href="https://riannevdberg.github.io" class="person">Rianne van den Berg</a><br>
+                  Research Scientist at Google AI, Amsterdam.
+                </p>
+              </div> <!-- col-sm-4 -->
+            </div> <!-- row -->
+
+            <div class="row">
+              <div class="col-sm-4 person">
+                <img src="img/sebastian.png" alt="Sebastian Nowozin" class="portrait">
+                <p>
+                  <a href="http://www.nowozin.net/sebastian/" class="person">Sebastian Nowozin</a><br>
+                  Machine learning researcher in the Brain team at Google AI, Berlin.
+                </p>
+              </div> <!-- col-sm-4 -->
+
+              <div class="col-sm-4 person">
+                <img src="img/daniel.png" alt="Daniel Hernández-Lobato" class="portrait">
+                <p>
+                  <a href="https://dhnzl.org" class="person">Daniel Hernández-Lobato</a><br>
+                  Lecturer of Computer Science at Universidad Autónoma de Madrid.
+                </p>
+          </div> <!-- col-sm-4 -->
+            </div> <!-- row -->
+          </div> <!-- container -->
+        </div> <!-- item -->
+
+        <div class="item">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6">
+                <h2>Confirmed Speakers and Participants</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4 person">
+                <img src="img/andriy.png" alt="Andriy Mnih" class="portrait">
+                <p>
+                  <a href="http://www.cs.toronto.edu/~amnih/" class="person">Andriy Mnih</a><br>
+                  Research scientist at DeepMind.
+                </p>
+              </div> <!-- col-sm-4 -->
+
+              <div class="col-sm-4 person">
+                <img src="img/tom.png" alt="Tom Rainforth" class="portrait">
+                <p>
+                  <a href="http://www.robots.ox.ac.uk/~twgr/" class="person">Tom Rainforth</a><br>
+                  Researcher in statistical machine learning at the University of Oxford.
+                </p>
+              </div> <!-- col-sm-4 -->
+            </div> <!-- row -->
+
+            <div class="row">
+              <div class="col-sm-4 person">
+                <img src="img/casper.png" alt="Casper Kaae Sønderby" class="portrait">
+                <p>
+                  <a href="https://casperkaae.github.io" class="person">Casper Kaae Sønderby</a><br>
+                   Research Scientist in Google Brains Amsterdam Lab.
+                </p>
+              </div> <!-- col-sm-4 -->
+
+              <div class="col-sm-4 person">
+                <img src="img/julie.png" alt="Julie Josse" class="portrait">
+                <p>
+                  <a href="http://juliejosse.com" class="person">Julie Josse</a><br>
+                  Professor of Statistics at Ecole Polytechnique (CMAP) and XPOP INRIA team.
+                </p>
+              </div> <!-- col-sm-4 -->
+            </div> <!-- row -->
+          </div> <!-- container -->
+        </div> <!-- item -->
+
+        <div class="item">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6">
+                <h2>Confirmed Speakers and Participants</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4 person">
+                <img src="img/ole.png" alt="Ole Winther" class="portrait">
+                <p>
+                  <a href="http://cogsys.imm.dtu.dk/staff/winther/" class="person">Ole Winther</a><br>
+                  Professor at the Technical University of Denmark and University of Copenhagen
+                </p>
+              </div> <!-- col-sm-4 -->
+
+              <div class="col-sm-4 person">
+                <img src="img/hauberg.png" alt="S&oslash;ren Hauberg" class="portrait">
+                <p>
+                  <a href="http://www2.compute.dtu.dk/~sohau/" class="person">S&oslash;ren Hauberg</a><br>
+                  Associate professor, Technical University of Denmark
+                </p>
+              </div> <!-- col-sm-4 -->
+
+            </div> <!-- row -->
+
+            <div class="row">
+              <div class="col-sm-4 person">
+                <img src="img/boomsma.png" alt="Wouter Boomsma" class="portrait">
+                <p>
+                  <a href="http://www.diku.dk/Ansatte/?pure=da/persons/275482" class="person">Wouter Boomsma</a><br>
+                  Associate professor, University of Copenhagen.
+                </p>
+              </div> <!-- col-sm-4 -->
+
+              <div class="col-sm-4 person">
+                <img src="img/pierre.png" alt="Pierre-Alexandre Mattei" class="portrait">
+                <p>
+                  <a href="https://pamattei.github.io/" class="person">Pierre-Alexandre Mattei</a><br>
+                   INRIA Sophia-Antipolis.
+                </p>
+              </div> <!-- col-sm-4 -->
+            </div> <!-- row -->
+          </div> <!-- container -->
+        </div> <!-- item -->
+
+        <div class="item">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6">
+                <h2>Confirmed Speakers and Participants</h2>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-4 person">
+                <img src="img/jes.png" alt="Jes Frellsen" class="portrait">
+                <p>
+                  <a href="https://frellsen.org/" class="person">Jes Frellsen</a><br>
+                  Associate professor, Technical University of Denmark.
+                </p>
+              </div> <!-- col-sm-4 -->
+            </div> <!-- row -->
+          </div> <!-- container -->
+        </div> <!-- item -->
+
+        <div class="item">
+          <div class="container">
+            <div class="row">
+              <div>
+                <div class="container">
+                  <img src="img/mermaid4.png" style="width:60%; padding-top: 50px;">
+                  <div style="position: absolute; top: 10%; left: 100px;">
+                    <h2><span class="bannertxt" style="line-height: 1.0em;">Venue</span></h2>
+                    <p style="font-weight: bold; line-height: 1.0em;"><span class="bannertxt">Pier 47, Copenhagen</span></p>
+                    <p style="font-weight: bold; line-height: 1.0em;"><span class="bannertxt">Limited seating (request attendence at http://GenerateUncertainty.github.io)</span></p>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- row -->
+          </div> <!-- container -->
+        </div> <!-- item -->
+      </div>
+
+      <!-- Controls -->
+      <!--
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+      -->
+    </div>
   </body>
 </html>
