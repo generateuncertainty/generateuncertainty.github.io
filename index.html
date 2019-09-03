@@ -26,7 +26,6 @@
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Assistant" rel="stylesheet">
 
-
     <!-- Custom styles for this template -->
     <link href="css/main.css" rel="stylesheet">
 
@@ -36,17 +35,17 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <!-- Google Analytics -->
-    <!--
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146937198-1"></script>
     <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-105687475-1', 'auto');
-      ga('send', 'pageview');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-146937198-1');
     </script>
-    -->
+
+    <!-- Function for generating email adress -->
     <script>
       function f() {
          coded = "CpCdp@QddQpBQodf06.PdC "
@@ -66,6 +65,7 @@
          document.write("<a href='mailto:"+link+"'>"+link+"</a>")
       }
     </script>
+
   </head>
 
   <body data-spy="scroll" data-target="#topnavbar" data-offset="50">
@@ -87,9 +87,9 @@
             <li><a href="#program">Program</a></li>
             <li><a href="#registration">Registration</a></li>
             <!--
-	    <li><a href="#venue">Venue</a></li>
+            <li><a href="#venue">Venue</a></li>
             <li><a href="#posters">Posters</a></li>
-	    -->
+	        -->
             <li><a href="#organizers">Organizers</a></li>
           </ul>
         </div>
@@ -112,14 +112,7 @@
         <div class="row justify-content-md-center">
           <div class="col-sm-8">
             <p style="margin-top: 30px;">
-              Generative models and uncertainty quantification lie at
-              the heart of Bayesian modelling and inference. At this
-              small meeting, we discuss recent developments within the
-              field. The meeting is deliberately kept small in order
-              to ensure that discussion remains honest, lively and
-              interesting. Attendance is, thus, mostly by invitation,
-              but one can apply to join
-              (see <a href="#registration">below</a>).
+              Generative models and uncertainty quantification lie at the heart of Bayesian modelling and inference. At this small meeting, we discuss recent developments within the field. The meeting is deliberately kept small in order to ensure that discussion remains honest, lively and interesting. Attendance is, thus, mostly by invitation, but one can apply to join (see <a href="#registration">below</a>).
             </p>
           </div> <!-- col-md-8 -->
         </div> <!-- row -->
@@ -129,6 +122,7 @@
     <!-- SPEAKERS -->
     <section id="speakers" class="anchor">
       <div class="container">
+
         <div class="row">
           <div class="col-sm-6">
             <h2>Confirmed Speakers and Participants</h2>
@@ -158,7 +152,7 @@
             <img src="img/rtqichen.png" alt="Ricky (Tian Qi) Chen" class="portrait"> 
             <p>
               <a href="http://www.cs.toronto.edu/~rtqichen/" class="person">Ricky (Tian Qi) Chen</a><br>
-	      PhD student at the University of Toronto.
+	          PhD student at the University of Toronto.
             </p> 
           </div> <!-- col-sm-4 -->
           
@@ -166,18 +160,17 @@
             <img src="img/mark_wilk.png" alt="Mark van der Wilk" class="portrait"> 
             <p>
               <a href="https://markvdw.github.io/" class="person">Mark van der Wilk</a><br>
-	      Machine Learning Researcher PROWLER.io.
+	          Machine Learning Researcher PROWLER.io.
             </p> 
           </div> <!-- col-sm-4 -->
         </div> <!-- row -->
-        
-        
+
         <div class="row">
           <div class="col-sm-4 person">
             <img src="img/miguel.png" alt="José Miguel Hernández Lobato" class="portrait"> 
             <p>
               <a href="https://jmhl.org/" class="person">José Miguel Hernández Lobato</a><br>
-	      University Lecturer in Machine Learning, University of Cambridge.
+	          University Lecturer in Machine Learning, University of Cambridge.
             </p> 
           </div> <!-- col-sm-4 -->
           
@@ -185,18 +178,17 @@
             <img src="img/rianne.png" alt="Rianne van den Berg" class="portrait"> 
             <p>
               <a href="https://riannevdberg.github.io" class="person">Rianne van den Berg</a><br>
-	      Research Scientist at Google AI, Amsterdam.
+	          Research Scientist at Google AI, Amsterdam.
             </p> 
-	  </div> <!-- col-sm-4 -->
+	      </div> <!-- col-sm-4 -->
         </div> <!-- row -->
-
 
         <div class="row">
           <div class="col-sm-4 person">
             <img src="img/sebastian.png" alt="Sebastian Nowozin" class="portrait"> 
             <p>
               <a href="http://www.nowozin.net/sebastian/" class="person">Sebastian Nowozin</a><br>
-	      Machine learning researcher in the Brain team at Google AI, Berlin.
+	          Machine learning researcher in the Brain team at Google AI, Berlin.
             </p> 
           </div> <!-- col-sm-4 -->
           
@@ -204,11 +196,10 @@
             <img src="img/daniel.png" alt="Daniel Hernández-Lobato" class="portrait"> 
             <p>
               <a href="https://dhnzl.org" class="person">Daniel Hernández-Lobato</a><br>
-	      Lecturer of Computer Science at Universidad Autónoma de Madrid.
+              Lecturer of Computer Science at Universidad Autónoma de Madrid.
             </p> 
-	  </div> <!-- col-sm-4 -->
+	      </div> <!-- col-sm-4 -->
         </div> <!-- row -->
-
         
         <div class="row">
           <div class="col-sm-4 person">
@@ -223,58 +214,29 @@
             <img src="img/tom.png" alt="Tom Rainforth" class="portrait"> 
             <p>
               <a href="http://www.robots.ox.ac.uk/~twgr/" class="person">Tom Rainforth</a><br>
-	      Researcher in statistical machine learning at the University of Oxford.
+	          Researcher in statistical machine learning at the University of Oxford.
             </p> 
-	  </div> <!-- col-sm-4 -->
+	      </div> <!-- col-sm-4 -->
         </div> <!-- row -->
 
         <div class="row">
           <div class="col-sm-4 person">
-            <img src="img/casper.png" alt="Casper Kaae Sønderby" class="portrait"> 
+            <img src="img/casper.png" alt="Casper Kaae Sønderby" class="portrait">
             <p>
               <a href="https://casperkaae.github.io" class="person">Casper Kaae Sønderby</a><br>
                Research Scientist in Google Brains Amsterdam Lab.
-            </p> 
+            </p>
           </div> <!-- col-sm-4 -->
-          
+
           <div class="col-sm-4 person">
-            <img src="img/julie.png" alt="Julie Josse" class="portrait"> 
+            <img src="img/julie.png" alt="Julie Josse" class="portrait">
             <p>
               <a href="http://juliejosse.com" class="person">Julie Josse</a><br>
-	      Professor of Statistics at Ecole Polytechnique (CMAP) and XPOP INRIA team.
-            </p> 
-	  </div> <!-- col-sm-4 -->
+	          Professor of Statistics at Ecole Polytechnique (CMAP) and XPOP INRIA team.
+            </p>
+	      </div> <!-- col-sm-4 -->
         </div> <!-- row -->
-        
-        
-	<!--
-        <div class="row">
-          <div class="col-sm-6">
-            <h3>Confirmed Local Speakers</h3>
-          </div>
-        </div>
-        -->    
-        
-	<!--
-        <div class="row">
-          <div class="col-sm-4 person">
-            <img src="img/ole.png" alt="Ole Winther" class="portrait"> 
-            <p>
-              <a href="http://cogsys.imm.dtu.dk/staff/winther/" class="person">Ole Winther</a><br>
-              Professor at Section for Cognitive Systems, Technical University of Denmark<br>
-              Group leader of Gene Regulation, Bioinformatics, University of Copenhagen
-            </p> 
-	  </div> --><!-- col-sm-4 -->
 
-	  <!--
-          <div class="col-sm-4 person">
-            <img src="img/morten.png" alt="Morten M&oslash;rup" class="portrait"> 
-            <p>
-              <a href="http://www.mortenmorup.dk/" class="person">Morten M&oslash;rup</a><br>
-              Associate Professor at the Section for Cognitive Systems, Technical University of Denmark
-            </p> 
-	  </div> --> <!-- col-sm-4 -->
-        </div> <!-- row -->
       </div> <!-- container -->
     </section>
 
@@ -285,8 +247,8 @@
         <div class="row">
           <div class="col-md-8">
             <h2>Program</h2>
-	    <p>To be determined.</p>
-	    <!--
+	        <p>To be determined.</p>
+            <!--
             <table class="table table-borderless" style="margin-top: 2em;">
               <thead>
                 <tr style="font-weight: bold;">
@@ -396,7 +358,7 @@
                 </tr>
               </tbody>
             </table>
-	    -->
+            -->
           </div> <!-- col-md-8 -->
         </div> <!-- row -->
       </div> <!-- container -->
@@ -408,14 +370,11 @@
         <div class="row">
           <div class="col-md-8">
             <h2>Registration</h2>
-	    <p>
-	      If you would like to attend this meeting, but have yet to recieve an invitation, then fill out the
-	      following <a href="https://docs.google.com/forms/d/e/1FAIpQLSdwW43R-XRm95f2wNwUBmTkiosTQcYh589YLMuhKf6_3UNTSw/viewform?usp=sf_link">Google form</a>.
-	      Note that seating is limited, so we cannot guarantee a ticket.
-	    </p>
+            <p>
+              If you would like to attend this meeting, but have yet to recieve an invitation, then fill out the following <a href="https://docs.google.com/forms/d/e/1FAIpQLSdwW43R-XRm95f2wNwUBmTkiosTQcYh589YLMuhKf6_3UNTSw/viewform?usp=sf_link">Google form</a>. Note that seating is limited, so we cannot guarantee a ticket.
+            </p>
 
-
-	    <!--
+    	    <!--
             <h3>Accommodation</h3>
             <p>
               If you are visiting from abroad we recommend the following hotels:
@@ -424,14 +383,12 @@
               <li><a href="http://www.arthurhotels.dk/hotel-kong-arthur/">Hotel Kong Arthur ****</a></li>
               <li><a href="https://www.cabinn.com/hotel/sca-hotel-koebenhavn-copenhagen">CABINN Scandinavia Hotel **</a></li>
             </ul>
-	  </div> -->
-	  <!-- col-md-8 -->
+            -->
+	      </div> <!-- col-md-8 -->
         </div> <!-- row -->
       </div> <!-- container -->
     </section>
 
-    
-    
     <!-- ORGANIZERS -->
     <section id="organizers" class="anchor">
       <div class="container">
@@ -448,13 +405,13 @@
               <li><a href="https://pamattei.github.io/">Pierre-Alexandre Mattei, INRIA Sophia-Antipolis</a></li>
               <li><a href="https://frellsen.org/">Jes Frellsen, Technical University of Denmark</a></li>
             </ul>
-	    <!--
+	        <!--
             <p>
               For matters regarding the conference, you can contact <script>f()</script><noscript>[Javascript required]</noscript>.
             </p>
-	    -->
+	        -->
             <p>
-	      We are grateful for funding from the Villum Foundation (grant 15334) and the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement number 757360). 
+	          We are grateful for funding from the Villum Foundation (grant 15334) and the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement number 757360).
             </p>       
           </div> <!-- col-md-8 -->
         </div> <!-- row -->
