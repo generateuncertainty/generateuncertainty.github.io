@@ -130,7 +130,7 @@ a:hover {
 .btn-accent:visited,
 .btn-accent:focus {
     background-color: #E3170A;
-    border-color: none;
+    border: none;
     color: #FFFFFF;
 }
 
@@ -154,7 +154,7 @@ a:hover {
 }
 
 .table-borderless > tfoot > tr > td,
-.table-borderless > tfoot > tr > th, {
+.table-borderless > tfoot > tr > th {
     border: none;
 }
 
