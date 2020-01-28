@@ -175,13 +175,26 @@ a:hover {
     background-color: white;
 }
 
+div.ellis {
+  background-image: url(../img/ellis_logo.png);
+  background-position: 90% 50%;
+  background-size: 300px, 300px;
+  background-repeat: no-repeat;
+  background-color: #666666;
+  color: #ffffff;
+  height: 350px;
+  padding: 50px;
+  border-radius: 5px;
+}
 
 div.person {
     background-color: rgba(135, 172, 185,0.25); /* #87ACB9 */
     border: none;
     border-radius: 5px;
     padding: 5px;
-    margin:  5px;
+    /*margin:  5px;*/
+    margin-right: 5px;
+    margin-bottom: 5px;
     min-height: 120px;
 }
 
